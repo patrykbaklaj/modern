@@ -1,0 +1,92 @@
+<svg id="software" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="103.312" height="76.44" viewBox="0 0 103.312 76.44">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: #909fae;
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        filter: url(#filter-2);
+      }
+
+      .cls-3 {
+        filter: url(#filter-3);
+      }
+    </style>
+    <filter id="filter" x="573.5" y="1072.97" width="55.5" height="55.03" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="0.5" dy="0.866" in="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood result="flood" flood-color="#e9e9e9"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+      <feGaussianBlur result="blur-2" stdDeviation="1" in="SourceAlpha"/>
+      <feFlood result="flood-2" flood-color="#ddd" flood-opacity="0.75"/>
+      <feComposite result="composite-2" operator="out" in2="blur-2"/>
+      <feOffset result="offset-2" dx="2" dy="3.464"/>
+      <feComposite result="composite-3" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend-2" mode="multiply" in2="blend"/>
+    </filter>
+    <filter id="filter-2" x="614.875" y="1051.56" width="34.125" height="34.44" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="0.5" dy="0.866" in="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood result="flood" flood-color="#e9e9e9"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+      <feGaussianBlur result="blur-2" stdDeviation="1" in="SourceAlpha"/>
+      <feFlood result="flood-2" flood-color="#ddd" flood-opacity="0.75"/>
+      <feComposite result="composite-2" operator="out" in2="blur-2"/>
+      <feOffset result="offset-2" dx="2" dy="3.464"/>
+      <feComposite result="composite-3" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend-2" mode="multiply" in2="blend"/>
+    </filter>
+    <filter id="filter-3" x="545.688" y="1088.41" width="27.312" height="26.59" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="0.5" dy="0.866" in="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood result="flood" flood-color="#e9e9e9"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+      <feGaussianBlur result="blur-2" stdDeviation="1" in="SourceAlpha"/>
+      <feFlood result="flood-2" flood-color="#ddd" flood-opacity="0.75"/>
+      <feComposite result="composite-2" operator="out" in2="blur-2"/>
+      <feOffset result="offset-2" dx="2" dy="3.464"/>
+      <feComposite result="composite-3" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend-2" mode="multiply" in2="blend"/>
+    </filter>
+  </defs>
+  <path class="cls-1" d="M588.95,1099.85a11.632,11.632,0,1,0,11.632-11.63A11.627,11.627,0,0,0,588.95,1099.85Zm16.858,18.14v7.4a1.114,1.114,0,0,1-1.114,1.11h-8.179a1.113,1.113,0,0,1-1.113-1.11v-7.38a18.918,18.918,0,0,1-4.04-1.68l-5.378,5.37a1.1,1.1,0,0,1-1.573,0l-5.784-5.78a1.108,1.108,0,0,1,0-1.57l5.407-5.41a18.8,18.8,0,0,1-1.6-3.88h-7.831a1.116,1.116,0,0,1-1.113-1.12v-8.18a1.114,1.114,0,0,1,1.113-1.11h7.842a18.651,18.651,0,0,1,1.531-3.74l-5.669-5.67a1.12,1.12,0,0,1,0-1.58l5.784-5.78a1.1,1.1,0,0,1,1.573,0l5.6,5.59a18.719,18.719,0,0,1,4.139-1.73v-7.66a1.113,1.113,0,0,1,1.113-1.11h8.179a1.114,1.114,0,0,1,1.114,1.11v7.68a18.866,18.866,0,0,1,3.824,1.58l5.288-5.29a1.122,1.122,0,0,1,1.574,0l5.785,5.79a1.108,1.108,0,0,1,0,1.57l-5.258,5.26a18.8,18.8,0,0,1,1.663,3.98h7.246a1.113,1.113,0,0,1,1.112,1.11v8.18a1.115,1.115,0,0,1-1.112,1.12h-7.235a18.572,18.572,0,0,1-1.729,4.11l5,5a1.121,1.121,0,0,1,0,1.58l-5.784,5.78a1.122,1.122,0,0,1-1.574,0l-5.071-5.07A19.261,19.261,0,0,1,605.808,1117.99Zm-12.383-18.12a7.216,7.216,0,1,1,7.216,7.22A7.223,7.223,0,0,1,593.425,1099.87Z" transform="translate(-545.688 -1051.56)"/>
+  <path id="Shape_11_copy" data-name="Shape 11 copy" class="cls-2" d="M624.557,1069.19a7.093,7.093,0,1,0,5.984-8.05A7.095,7.095,0,0,0,624.557,1069.19Zm11.779,9.44,0.657,4.46a0.676,0.676,0,0,1-.573.77l-4.934.73a0.68,0.68,0,0,1-.77-0.57l-0.655-4.46a10.79,10.79,0,0,1-2.586-.65l-2.767,3.72a0.682,0.682,0,0,1-.949.14l-4-2.98a0.678,0.678,0,0,1-.14-0.95l2.782-3.74a11.214,11.214,0,0,1-1.309-2.2l-4.724.7a0.681,0.681,0,0,1-.77-0.58l-0.726-4.93a0.676,0.676,0,0,1,.573-0.77l4.73-.7a11.509,11.509,0,0,1,.591-2.39l-3.923-2.92a0.678,0.678,0,0,1-.139-0.95l2.975-4a0.682,0.682,0,0,1,.949-0.14l3.872,2.88a11.333,11.333,0,0,1,2.343-1.41l-0.68-4.62a0.677,0.677,0,0,1,.573-0.77l4.934-.73a0.682,0.682,0,0,1,.771.57l0.681,4.64a11.228,11.228,0,0,1,2.447.61l2.721-3.66a0.682,0.682,0,0,1,.949-0.14l4,2.98a0.678,0.678,0,0,1,.14.95l-2.705,3.63a11.431,11.431,0,0,1,1.356,2.26l4.371-.64a0.674,0.674,0,0,1,.77.57l0.726,4.93a0.677,0.677,0,0,1-.573.77l-4.363.64a11.327,11.327,0,0,1-.678,2.64l3.458,2.57a0.681,0.681,0,0,1,.14.95l-2.976,4a0.666,0.666,0,0,1-.95.14l-3.509-2.6A12.2,12.2,0,0,1,636.336,1078.63Zm-9.077-9.83a4.4,4.4,0,1,1,4.993,3.71A4.4,4.4,0,0,1,627.259,1068.8Z" transform="translate(-545.688 -1051.56)"/>
+  <path id="Shape_11_copy_2" data-name="Shape 11 copy 2" class="cls-3" d="M553.139,1101.93a5.451,5.451,0,1,0,4.6-6.19A5.449,5.449,0,0,0,553.139,1101.93Zm9.053,7.26,0.5,3.43a0.523,0.523,0,0,1-.441.59l-3.792.56a0.527,0.527,0,0,1-.592-0.44l-0.5-3.42a8.369,8.369,0,0,1-1.988-.51l-2.126,2.86a0.525,0.525,0,0,1-.73.11l-3.076-2.29a0.522,0.522,0,0,1-.107-0.73l2.138-2.87a8.926,8.926,0,0,1-1.006-1.69l-3.63.53a0.528,0.528,0,0,1-.593-0.44l-0.558-3.79a0.517,0.517,0,0,1,.441-0.59l3.635-.54a8.907,8.907,0,0,1,.455-1.84l-3.015-2.24a0.521,0.521,0,0,1-.108-0.73l2.287-3.08a0.513,0.513,0,0,1,.729-0.1l2.976,2.21a8.669,8.669,0,0,1,1.8-1.09l-0.523-3.55a0.522,0.522,0,0,1,.44-0.59l3.793-.56a0.527,0.527,0,0,1,.592.44l0.524,3.56a9.144,9.144,0,0,1,1.88.47l2.091-2.81a0.525,0.525,0,0,1,.73-0.11l3.076,2.29a0.521,0.521,0,0,1,.108.73l-2.079,2.8a8.84,8.84,0,0,1,1.043,1.73l3.358-.5a0.527,0.527,0,0,1,.592.44l0.558,3.8a0.521,0.521,0,0,1-.44.59l-3.353.49a8.879,8.879,0,0,1-.521,2.03l2.657,1.98a0.521,0.521,0,0,1,.108.73l-2.287,3.07a0.525,0.525,0,0,1-.73.11l-2.7-2.01A8.847,8.847,0,0,1,562.192,1109.19Zm-6.977-7.56a3.381,3.381,0,1,1,3.838,2.86A3.386,3.386,0,0,1,555.215,1101.63Z" transform="translate(-545.688 -1051.56)"/>
+</svg>
