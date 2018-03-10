@@ -1,6 +1,7 @@
 @import './partials/reset';
 @import './partials/colors';
 @import './partials/fonts';
+@import "~swiper/dist/css/swiper.min.css";
 
 
 body,
@@ -281,6 +282,7 @@ input {
 
 .hexagon-wraper-right,
 .hexagon-wraper-left {
+    z-index: 2;
 
     @media (max-width: 1170px) {
         transform: scale(0.7);
@@ -422,7 +424,7 @@ input {
         }
         &__2,
         &__3 {
-            display: none;
+            //            display: none;
             h2 {
                 left: 53%;
 
@@ -500,6 +502,9 @@ input {
 
             @media (max-width: 700px) {
                 width: 50%;
+                font-size: 80%;
+                line-height: 3;
+                height: auto;
 
                 &::after {
                     content: none;
@@ -527,8 +532,7 @@ input {
                 }
             }
             &:last-child {
-
-                @media (min-widt: 701px) {
+                @media (min-width: 701px) {
                     border-right: none;
                 }
 
@@ -576,6 +580,7 @@ input {
         height: 192px;
         background: $section-services-background;
         position: absolute;
+        z-index: 2;
     }
     .parallel-right {
         right: 0;
@@ -1001,6 +1006,10 @@ input {
             flex-direction: column-reverse;
             width: 90%;
         }
+        
+        @media (max-width: 1000px) {
+            width: 100%;
+        }
     }
 
     &__content {
@@ -1088,8 +1097,7 @@ input {
         }
 
         @media (max-width: 600px) {
-            flex-wrap: wrap;
-            //            height: 700px;
+            flex-wrap: wrap; //            height: 700px;
         }
 
         &__map {
@@ -1172,12 +1180,12 @@ input {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        
+
         @media (max-width: 400px) {
-                justify-content: center;
+            justify-content: center;
             flex-direction: column;
             text-align: center;
-            }
+        }
 
         p {
             vertical-align: middle;

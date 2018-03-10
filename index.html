@@ -12,10 +12,13 @@
   <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
   <!--  Main Stylesheet  -->
   <link rel="stylesheet" href="app/build/main.css">
+
   <title>NetVariant</title>
+
 </head>
 
 <body>
+
   <nav class="nav">
     <header class="nav__logo">
       <h2>
@@ -109,45 +112,54 @@
       </ul>
     </div>
   </nav>
+  <!-- Swiper -->
   <section class="slider">
-    <div class="slider__container">
-      <ul>
-        <li class="slider__item slider__item__1">
+
+    <div class="slider__container swiper-container">
+      <div class="slider__wraper swiper-wrapper">
+
+        <div class="swiper-slide slider__item slider__item__1">
           <h2>Welcome to our website
             <br>Nice to meet you!
             <br>Have fun!
-          </h2> <img src="app/assets/images/iphone.png" alt="iphone 5">
+          </h2>
+          <img src="app/assets/images/iphone.png" alt="iphone 5">
           <div class="hexagon-wraper-right"> <img class="arrow__icon-right" src="app/assets/icons/arrow.png" alt="">
             <div class="hexagon-right"></div>
           </div>
-        </li>
-        <li class="slider__item slider__item__2">
+        </div>
+
+        <div class="swiper-slide slider__item slider__item__2">
           <h2>Maecenas mollis,
             </br>mi non pulvinar
             </br>lobortis, mi quam
-          </h2> <img src="app/assets/images/slide2.jpg" alt="">
+          </h2>
+          <img src="app/assets/images/slide2.jpg" alt="">
           <div class="hexagon-wraper-right"> <img class="arrow__icon-right" src="app/assets/icons/arrow.png" alt="">
             <div class="hexagon-right"></div>
           </div>
           <div class="hexagon-wraper-left"> <img class="arrow__icon-left" src="app/assets/icons/arrow.png" alt="">
             <div class="hexagon-left"></div>
           </div>
-        </li>
-        <li class="slider__item slider__item__3">
+        </div>
+
+        <div class="swiper-slide slider__item slider__item__3">
           <h2>Phasellus mi purus,
             </br>euismod sit amet
             </br>fringilla eu
-          </h2> <img src="app/assets/images/slide3.jpg" alt="">
+          </h2>
+          <img src="app/assets/images/slide3.jpg" alt="">
           <div class="hexagon-wraper-right"> <img class="arrow__icon-right" src="app/assets/icons/arrow.png" alt="">
             <div class="hexagon-right"></div>
           </div>
           <div class="hexagon-wraper-left"> <img class="arrow__icon-left" src="app/assets/icons/arrow.png" alt="">
             <div class="hexagon-left"></div>
           </div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   </section>
+
   <section>
     <nav class="menu2">
       <ul class="menu2__list">
@@ -348,6 +360,9 @@
       </div>
 
     </div>
+
+
+
   </section>
 
   <footer class="footer">
@@ -362,7 +377,12 @@
   </footer>
 
 
+
   <script src="app/js/map.js"></script>
+
+
+  <script src="node_modules/swiper/dist/js/swiper.esm.js"></script>
+
 
   <script src="./app/build/out.js"></script>
 
