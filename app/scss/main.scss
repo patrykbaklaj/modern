@@ -14,9 +14,6 @@ html {
         text-decoration: none;
         color: inherit;
     }
-
-
-
 }
 
 input {
@@ -36,18 +33,22 @@ input {
     display: inline-block;
     width: 100%;
     height: 100%;
+
     svg {
         vertical-align: middle;
         line-height: 100%;
     }
+
     &:hover {
         color: $menu-icons-hover;
         fill: $menu-icons-hover;
     }
+
     &:active {
         color: $menu-icons-active;
         fill: $menu-icons-active;
     }
+
     &.search {
         background: $likeMenu-background;
         fill: $search-icon;
@@ -55,17 +56,20 @@ input {
             fill: $menu-icons-hover;
         }
     }
-    &.menu-btn {
+
+    &.menu_btn {
         font-weight: bold;
         font-size: 2.5rem;
         vertical-align: middle;
     }
+
     &.white {
         fill: $like-menu-color;
         &:hover {
             fill: $menu-icons-red-hover;
         }
     }
+
     &.red:hover {
         fill: $menu-icons-red-hover;
         color: $menu-icons-red-hover;
@@ -80,29 +84,19 @@ input {
     justify-content: space-between;
     width: 100%;
     box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
-    &__menuWraper {
-        display: inherit;
-        @media screen and (max-width: 1170px) {
-            width: 100%;
-            justify-content: space-between;
-            border-top: 1px solid $like-menu-item-border;
-        }
 
-        @media screen and (max-width: 999px) {
-            width: auto;
-            border: none;
-        }
 
-        @media (max-width: 600px) {
-            width: 100%;
-            justify-content: center;
-        }
+
+    @media (min-width: 1170px) {
+        flex-direction: row;
     }
+
     &__logo {
-        //        height: 70px;
+
         font-family: 'Walkway SemiBold';
         padding-left: 1.8rem;
         vertical-align: middle;
+
         h2 {
             display: inline;
             cursor: pointer;
@@ -111,6 +105,7 @@ input {
             text-transform: uppercase;
             font-size: 29px;
             border-bottom: 2px solid $logo-border;
+
             span {
                 border-bottom: 2px solid $logo-span-border;
                 font-family: 'Walkway UltraBold';
@@ -118,21 +113,25 @@ input {
                 z-index: 9;
             }
         }
+
         @media screen and (max-width: 1170px) {
             width: 100%;
             text-align: center;
         }
 
-        @media screen and (max-width: 999px) {
+        @media screen and (max-width: 1000px) {
             width: auto;
         }
+
         @media screen and (max-width: 600px) {
             width: 100%;
             text-align: center;
         }
     }
+
     &__menu {
         display: inline-block;
+
         &__item {
             line-height: 70px;
             display: inline-block;
@@ -142,6 +141,7 @@ input {
             &::after {
                 position: relative;
             }
+
             a {
                 line-height: 21px;
                 color: inherit;
@@ -155,17 +155,35 @@ input {
             }
         }
 
-        @media screen and (max-width: 999px) {
+        @media screen and (max-width: 1000px) {
             display: none;
+            top: 69px;
+            left: 0;
+            z-index: 999999;
+            width: 100%;
+            background: $subMenu-background;
+
+            &__item {
+                height: 70px;
+                display: block;
+                position: relative;
+            }
         }
-
-
-
     }
+
     &__smallMenu {
-        //           line-height: 70px;
         font-size: 0;
         display: inline-block;
+
+
+        @media (max-width: 600px) {
+            display: flex;
+            width: 100%;
+        }
+
+        @media (min-width: 1000px) {
+            order: 3;
+        }
 
         &__item {
             text-align: center;
@@ -174,26 +192,27 @@ input {
             display: inline-block;
             border-left: 1px solid $menu-item-border;
             float: left;
+
             &.menu-btn {
 
-                @media screen and (min-width: 1000px) {
+                @media (min-width: 999px) {
                     display: none;
                 }
             }
 
-
             @media (max-width: 600px) {
                 border: none;
                 margin: auto;
+
+
             }
         }
-
 
         &__item.like {
             position: relative;
         }
-
     }
+
     &__likeMenu {
         z-index: 901;
         display: none;
@@ -201,6 +220,7 @@ input {
         width: 100%;
         z-index: 10;
         float: left;
+
         &__item {
             background: $likeMenu-background;
             text-align: center;
@@ -212,6 +232,7 @@ input {
             float: left;
         }
     }
+
     &__submenu {
         z-index: 900;
         display: none;
@@ -221,6 +242,7 @@ input {
         left: 0;
         background: $subMenu-background;
         width: 100%;
+
         &__item {
             display: inline-block;
             padding: 0 2rem;
@@ -228,8 +250,27 @@ input {
             font-family: 'Karbon Bold';
             border-right: 1px solid $border-sub-menu-items;
             line-height: 21px;
+
+            &:last-child {
+                border-right: none;
+            }
         }
+
+        &__title {
+            font-family: 'Karbon Thin';
+            font-size: 2rem;
+            display: inline-block;
+            vertical-align: middle;
+            padding: 0 3rem 0 0;
+            color: $submenu-title;
+
+            @media (min-width: 1170px) {
+                font-size: 50px;
+            }
+        }
+
     }
+
     &__search {
         z-index: 899;
         display: none;
@@ -243,15 +284,23 @@ input {
             position: absolute;
             left: 33%;
             top: 22.6%;
-            bottom: 0;
             width: 77px;
             height: 77px;
             line-height: 133px;
             background: url('../assets/icons/loupe.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            @media (max-width: 1439px) {
+                left: calc(30% - 4vmin);
+                top: calc(50% - 4vmin);
+                width: 8vmin;
+                height: 8vmin;
+
+            }
         }
 
         &__input {
-            border-right: 2px solid red;
             height: 100px;
             box-sizing: border-box;
             color: $search-text;
@@ -267,11 +316,11 @@ input {
                 height: 133px;
             }
 
-
             &:active,
             &:focus {
                 outline: none;
             }
+
             &::placeholder {
                 color: $search-placeholder;
                 text-transform: uppercase;
@@ -299,12 +348,13 @@ input {
     cursor: pointer;
     position: absolute;
     top: calc(50% - 55.43px);
+
     .arrow__icon-right,
     .arrow__icon-left {
         position: absolute;
+        top: 50%;
         height: 28px;
         width: 17px;
-        top: 50%;
         margin-top: -15px;
     }
 }
@@ -327,6 +377,14 @@ input {
     .arrow__icon-right {
         right: 50%;
         margin-right: -8px;
+
+        &.touch {
+            display: none;
+            width: 45%;
+            height: auto;
+            margin-right: -12px;
+            margin-top: -21px;
+        }
     }
 }
 
@@ -345,10 +403,20 @@ input {
     @media (max-width: 700px) {
         left: -40.71px;
     }
+
     .arrow__icon-left {
         left: 50%;
         margin-left: -8px;
         transform: rotate(180deg);
+
+        &.touch {
+            transform: rotate(360deg);
+            display: none;
+            width: 45%;
+            height: auto;
+            margin-left: -12px;
+            margin-top: -21px;
+        }
     }
 }
 
@@ -387,11 +455,13 @@ input {
 }
 
 .slider {
+
     &::after {
         content: "";
         display: table;
         clear: both;
     }
+
     .slider__container {}
     .slider__item {
         float: left;
@@ -422,9 +492,10 @@ input {
             }
 
         }
+
         &__2,
         &__3 {
-            //            display: none;
+
             h2 {
                 left: 53%;
 
@@ -433,6 +504,7 @@ input {
                 }
             }
         }
+
         &__2 {
             .hexagon-right {
                 background-color: $slide-arrow-background2;
@@ -444,7 +516,9 @@ input {
                 }
             }
         }
+
         &__3 {
+
             .hexagon-right {
                 background-color: $slide-arrow-background3;
                 &::before {
@@ -454,6 +528,7 @@ input {
                     border-top: 27.71px solid $slide-arrow-background3;
                 }
             }
+
             .hexagon-left {
                 background-color: $slide-arrow-background2;
                 &::before {
@@ -465,6 +540,7 @@ input {
             }
         }
     }
+
     img {
         z-index: 10;
         display: block;
@@ -477,6 +553,7 @@ input {
 .menu2 {
     width: 100%;
     margin: 0;
+
     &__list {
         display: flex;
         flex-direction: row;
@@ -485,6 +562,7 @@ input {
         font-family: 'Karbon Bold';
         font-size: 1.0625rem;
         text-transform: uppercase;
+
         &__item {
             text-align: center;
             border-right: 1px solid $menu2-item-border;
@@ -495,7 +573,8 @@ input {
             line-height: 55px;
             vertical-align: middle;
             color: $menu2-item-color;
-            position: relative; //            transition: all .3s;
+            position: relative;
+
             @media (max-width: 1170px) {
                 width: 25%;
             }
@@ -511,12 +590,12 @@ input {
                 }
             }
 
-
             a {
                 transition: all .3s;
                 padding-bottom: .5rem;
                 border-bottom: 2px solid rgba(0, 0, 0, 0);
             }
+
             &::after {
                 content: "";
                 display: block;
@@ -531,6 +610,7 @@ input {
                     content: none;
                 }
             }
+
             &:last-child {
                 @media (min-width: 701px) {
                     border-right: none;
@@ -548,13 +628,16 @@ input {
                     padding-bottom: 0;
                 }
             }
+
             @media screen and (max-width: 579px) {
                 //                width: 50%;
             }
+
             @media screen and (min-width: 580px) {
                 //                width: 25%;
                 //                line-height: 55px;
             }
+
             @media screen and (min-width: 730px) {
                 //                width: 20%;
             }
@@ -574,6 +657,16 @@ input {
         }
     }
 
+    .services__touch {
+        position: absolute;
+        z-index: 3;
+        right: 10px;
+        top: -60px;
+
+        @media (max-width: 1170px) {
+            display: none;
+        }
+    }
 
     [class^="parallel"] {
         width: 208px;
@@ -582,12 +675,14 @@ input {
         position: absolute;
         z-index: 2;
     }
+
     .parallel-right {
         right: 0;
         margin-right: -104px;
         top: -96px;
         transform: skewX(-30deg);
     }
+
     .parallel-left {
         left: 0;
         margin-left: -104px;
@@ -608,23 +703,32 @@ input {
         font-size: .8125rem;
         padding-left: .25rem;
         text-transform: uppercase;
+        z-index: 5;
+        position: relative;
+
     }
+
     h2 {
         font-family: 'Karbon Thin';
         font-size: 3.75rem;
         color: $services-header;
         margin-bottom: 3.3475rem;
+        z-index: 5;
+        position: relative;
+
 
         @media (max-width: 600px) {
             font-size: 2rem;
             margin-bottom: 2rem;
         }
     }
+
     p {
         font-family: 'Droid Sans';
         font-size: 0.875rem;
         line-height: 1.375rem;
     }
+
     &__content {
         display: flex;
         flex-wrap: wrap;
@@ -671,15 +775,18 @@ input {
         flex-direction: column;
         align-content: center;
         justify-content: flex-end;
+
         a {
             text-align: center;
             transition: all .3s;
+
             h3 {
                 font-family: 'Karbon Thin';
                 font-size: 1.5rem;
                 padding-top: 2.5rem;
             }
         }
+
         a:hover {
             transform: scale(1.2, 1.2);
             color: $services-header;
@@ -761,7 +868,6 @@ input {
                     width: 100%;
                 }
             }
-
         }
 
         &__right {
@@ -803,9 +909,11 @@ input {
             &__left {
                 padding-right: 1rem;
             }
+
             &__center {
                 padding: 0 1rem;
             }
+
             &__right {
                 padding-left: 1rem;
                 margin-top: 0;
@@ -822,10 +930,12 @@ input {
     }
 
     &__details {
+
         &:first-child {
             width: 30%;
             padding-right: 0.75rem;
         }
+
         &:last-child {
             width: 70%;
         }
@@ -834,8 +944,10 @@ input {
         flex-direction: column;
         justify-content: flex-start;
         transition: all .3s;
+
         a {
             text-align: center;
+
             img {
                 width: 100%;
                 height: auto;
@@ -843,6 +955,7 @@ input {
                 transition: all 0.4s;
             }
         }
+
         h3 {
             font-family: 'Karbon Thin';
             font-size: 2.5rem;
@@ -1006,7 +1119,7 @@ input {
             flex-direction: column-reverse;
             width: 90%;
         }
-        
+
         @media (max-width: 1000px) {
             width: 100%;
         }
@@ -1058,6 +1171,7 @@ input {
                 margin-top: 1.5625rem;
                 position: relative;
                 text-transform: uppercase;
+                transition: all .25s;
 
                 &::before {
                     top: -10px;
@@ -1073,6 +1187,14 @@ input {
                     }
                 }
 
+                &:hover {
+                    transform: translate(0, -4px);
+
+                    &::before {
+                        background: $summary-color;
+                    }
+                }
+
             }
 
             h5 {
@@ -1080,6 +1202,14 @@ input {
                 font-size: .75rem;
                 line-height: 1.3125rem;
                 color: $summary-second-color;
+            }
+
+            a {
+                transition: all 0.4s;
+
+                &:hover {
+                    color: $menu-icons-hover;
+                }
             }
         }
 

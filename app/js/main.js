@@ -16,8 +16,19 @@
 
      // handle submenu visibility on hover
      $('.nav__menu__item').on('mouseenter mouseleave', function () {
-         $(this).find('.nav__submenu').stop().slideToggle();
+
+         if (window.innerWidth >= 1000) {
+
+             $(this).find('.nav__submenu').stop().slideToggle();
+         }
      });
+     
+     // hamburger button handler
+     $('.menu_btn').on('click', function (event) {
+         event.preventDefault();
+         $('.nav__menu').stop().slideToggle();
+     });
+     
 
      // handling slider events
      var swiper = new Swiper('.swiper-container', {
@@ -39,6 +50,20 @@
      $('.hexagon-wraper-left').on('click', function () {
          swiper.slidePrev();
      });
+
+
+
+
+
+     $('[class^="hexagon-wraper-"]')
+         .on('mouseenter', function () {
+             $(this).find('.arrow').toggle(200);
+             $(this).find('.touch').toggle(200);
+         })
+         .on('mouseleave', function () {
+             $(this).find('.arrow').toggle(200);
+             $(this).find('.touch').toggle(200);
+         })
 
 
      // handle slides change
@@ -76,9 +101,5 @@
      //        navigate(0);
      //    })();
      //    
-
-
-
-
 
  });
