@@ -3,7 +3,6 @@
 @import './partials/fonts';
 @import "~swiper/dist/css/swiper.min.css";
 
-
 body,
 html {
 
@@ -11,32 +10,28 @@ html {
     min-height: 100vh;
     overflow-x: hidden;
     a {
-        text-decoration: none;
         color: inherit;
+        text-decoration: none;
     }
 }
 
-input {
-    border: none;
-}
-
 .container {
-    width: 80%;
     margin: 0 auto;
     position: relative;
+    width: 80%;
 }
 
 .menu__icon {
     color: $menu-icons;
     fill: $menu-icons;
-    transition: all .4s;
     display: inline-block;
-    width: 100%;
     height: 100%;
+    transition: all .4s;
+    width: 100%;
 
     svg {
-        vertical-align: middle;
         line-height: 100%;
+        vertical-align: middle;
     }
 
     &:hover {
@@ -58,8 +53,8 @@ input {
     }
 
     &.menu_btn {
-        font-weight: bold;
         font-size: 2.5rem;
+        font-weight: bold;
         vertical-align: middle;
     }
 
@@ -71,44 +66,39 @@ input {
     }
 
     &.red:hover {
-        fill: $menu-icons-red-hover;
         color: $menu-icons-red-hover;
+        fill: $menu-icons-red-hover;
     }
 }
 
 .nav {
     background-color: $nav-background;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
     color: $nav-color;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
 
     @media (min-width: 1170px) {
         position: fixed;
         z-index: 100;
-    }
-
-
-    @media (min-width: 1170px) {
         flex-direction: row;
     }
 
     &__logo {
-
         font-family: 'Walkway SemiBold', sans-serif;
         padding-left: 1.8rem;
         vertical-align: middle;
 
         h2 {
-            display: inline;
-            cursor: pointer;
-            line-height: 70px;
-            vertical-align: middle;
-            text-transform: uppercase;
-            font-size: 29px;
             border-bottom: 2px solid $logo-border;
+            cursor: pointer;
+            display: inline;
+            font-size: 29px;
+            line-height: 70px;
+            text-transform: uppercase;
+            vertical-align: middle;
 
             span {
                 border-bottom: 2px solid $logo-span-border;
@@ -119,8 +109,8 @@ input {
         }
 
         @media screen and (max-width: 1170px) {
-            width: 100%;
             text-align: center;
+            width: 100%;
         }
 
         @media screen and (max-width: 1000px) {
@@ -128,8 +118,8 @@ input {
         }
 
         @media screen and (max-width: 600px) {
-            width: 100%;
             text-align: center;
+            width: 100%;
         }
     }
 
@@ -137,18 +127,19 @@ input {
         display: inline-block;
 
         &__item {
-            line-height: 70px;
             display: inline-block;
-            font-size: 13px;
             font-family: 'Karbon Bold', sans-serif;
+            font-size: 13px;
+            line-height: 70px;
             padding: 0 2rem;
 
             a {
-                line-height: 21px;
                 color: inherit;
-                text-decoration: none;
+                line-height: 21px;
                 padding-bottom: 3px;
+                text-decoration: none;
                 transition: color .3s;
+
                 &:hover {
                     color: $menu-icons-hover;
                     border-bottom: 2px solid $menu-icons-hover;
@@ -157,24 +148,24 @@ input {
         }
 
         @media screen and (max-width: 1000px) {
-            display: none;
-            top: 69px;
-            left: 0;
-            z-index: 999999;
-            width: 100%;
             background: $subMenu-background;
+            display: none;
+            left: 0;
+            top: 69px;
+            width: 100%;
+            z-index: 999999;
 
             &__item {
-                height: 70px;
                 display: block;
+                height: 70px;
                 position: relative;
             }
         }
     }
 
     &__smallMenu {
-        font-size: 0;
         display: inline-block;
+        font-size: 0;
 
 
         @media (max-width: 600px) {
@@ -187,12 +178,12 @@ input {
         }
 
         &__item {
+            border-left: 1px solid $menu-item-border;
+            display: inline-block;
+            float: left;
+            line-height: 70px;
             text-align: center;
             width: 70px;
-            line-height: 70px;
-            display: inline-block;
-            border-left: 1px solid $menu-item-border;
-            float: left;
 
             &.menu-btn {
 
@@ -204,8 +195,6 @@ input {
             @media (max-width: 600px) {
                 border: none;
                 margin: auto;
-
-
             }
         }
 
@@ -215,42 +204,41 @@ input {
     }
 
     &__likeMenu {
-        z-index: 901;
         display: none;
+        float: left;
         position: absolute;
         width: 100%;
-        z-index: 10;
-        float: left;
+        z-index: 901;
 
         &__item {
             background: $likeMenu-background;
-            text-align: center;
-            width: 70px;
-            line-height: 70px;
-            display: inline-block;
-            border-right: 1px solid $like-menu-item-border;
             border-bottom: 1px solid $like-menu-item-border;
+            border-right: 1px solid $like-menu-item-border;
+            display: inline-block;
             float: left;
+            text-align: center;
+            line-height: 70px;
+            width: 70px;
         }
     }
 
     &__submenu {
-        z-index: 900;
-        display: none;
-        text-align: center;
-        height: 70px;
-        position: absolute;
-        left: 0;
         background: $subMenu-background;
+        display: none;
+        height: 70px;
+        left: 0;
+        position: absolute;
+        text-align: center;
         width: 100%;
+        z-index: 900;
 
         &__item {
+            border-right: 1px solid $border-sub-menu-items;
             display: inline-block;
-            padding: 0 2rem;
             font-size: 13px;
             font-family: 'Karbon Bold', sans-serif;
-            border-right: 1px solid $border-sub-menu-items;
             line-height: 21px;
+            padding: 0 2rem;
 
             &:last-child {
                 border-right: none;
@@ -258,12 +246,12 @@ input {
         }
 
         &__title {
+            color: $submenu-title;
+            display: inline-block;
             font-family: 'Karbon Thin', sans-serif;
             font-size: 2rem;
-            display: inline-block;
-            vertical-align: middle;
             padding: 0 3rem 0 0;
-            color: $submenu-title;
+            vertical-align: middle;
 
             @media (min-width: 1170px) {
                 font-size: 50px;
@@ -273,44 +261,42 @@ input {
     }
 
     &__search {
-        z-index: 899;
         display: none;
-        width: 100%;
-        position: absolute;
         left: 0;
+        position: absolute;
         width: 100%;
+        z-index: 899;
 
         label:after {
-            content: "";
-            position: absolute;
-            left: 33%;
-            top: 22.6%;
-            width: 77px;
-            height: 77px;
-            line-height: 133px;
             background: url('../assets/icons/loupe.svg');
             background-repeat: no-repeat;
             background-size: cover;
+            content: "";
+            height: 77px;
+            left: 33%;
+            line-height: 133px;
+            position: absolute;
+            top: 22.6%;
+            width: 77px;
 
             @media (max-width: 1439px) {
+                height: 8vmin;
                 left: calc(30% - 4vmin);
                 top: calc(50% - 4vmin);
                 width: 8vmin;
-                height: 8vmin;
-
             }
         }
 
         &__input {
-            height: 100px;
             box-sizing: border-box;
             color: $search-text;
-            font-weight: bold;
-            line-height: 60px;
-            width: 100%;
-            padding-left: 40%;
             font-size: 9vmin;
             font-family: 'Karbon Bold', sans-serif;
+            font-weight: bold;
+            height: 100px;
+            line-height: 60px;
+            padding-left: 40%;
+            width: 100%;
 
             @media screen and (min-width: 1440px) {
                 font-size: 6rem;
@@ -332,6 +318,9 @@ input {
 
 .hexagon-wraper-right,
 .hexagon-wraper-left {
+    cursor: pointer;
+    position: absolute;
+    top: calc(50% - 55.43px);
     z-index: 2;
 
     @media (max-width: 1170px) {
@@ -345,10 +334,6 @@ input {
     @media (max-width: 700px) {
         transform: scale(0.4);
     }
-
-    cursor: pointer;
-    position: absolute;
-    top: calc(50% - 55.43px);
 
     .arrow__icon-right,
     .arrow__icon-left {
@@ -376,22 +361,21 @@ input {
     }
 
     .arrow__icon-right {
-        right: 50%;
         margin-right: -8px;
+        right: 50%;
 
         &.touch {
             display: none;
-            width: 45%;
             height: auto;
             margin-right: -12px;
             margin-top: -21px;
+            width: 45%;
         }
     }
 }
 
 .hexagon-wraper-left {
     left: -27.71px;
-
 
     @media (max-width: 1170px) {
         left: -32.71px;
@@ -411,79 +395,82 @@ input {
         transform: rotate(180deg);
 
         &.touch {
-            transform: rotate(360deg);
             display: none;
-            width: 45%;
             height: auto;
             margin-left: -12px;
             margin-top: -21px;
+            transform: rotate(360deg);
+            width: 45%;
         }
     }
 }
 
 .hexagon-right,
 .hexagon-left {
-    position: relative;
-    width: 96px;
-    height: 55.43px;
     background-color: $slide-arrow-background1;
+    height: 55.43px;
     margin: 27.71px 0;
+    position: relative;
     transform: rotate(90deg);
+    width: 96px;
 }
 
 .hexagon-right:before,
 .hexagon-left:before,
 .hexagon-left:after,
 .hexagon-right:after {
+    border-left: 48px solid transparent;
+    border-right: 48px solid transparent;
     content: "";
     position: absolute;
     width: 0;
-    border-left: 48px solid transparent;
-    border-right: 48px solid transparent;
 }
 
 .hexagon-right:before,
 .hexagon-left:before {
-    bottom: 99%;
     border-bottom: 27.71px solid $slide-arrow-background1;
+    bottom: 99%;
 }
 
 .hexagon-right:after,
 .hexagon-left:after {
+    border-top: 27.71px solid $slide-arrow-background1;
     top: 98%;
     width: 0;
-    border-top: 27.71px solid $slide-arrow-background1;
 }
 
 .slider {
 
     &::after {
+        clear: both;
         content: "";
         display: table;
-        clear: both;
     }
 
     .slider__item {
-        float: left;
-        display: inline-block;
-        height: 100%;
-        width: 100%;
         background-position: center;
         background-size: cover;
         color: $slider-item;
-        position: relative;
+        display: inline-block;
+        height: 100%;
+        float: left;
         overflow: hidden;
+        position: relative;
+        width: 100%;
 
         h2 {
-            z-index: 1;
-            top: 33%;
+            font-family: "Karbon Thin", sans-serif;
+            font-size: 3vmax;
             left: 12%;
+            line-height: 0.75;
             max-width: 75%;
             position: absolute;
-            font-size: 6vmin;
-            font-family: "Karbon Thin", sans-serif;
-            line-height: 0.75;
+            top: 33%;
+            z-index: 1;
 
+            @media screen and (min-width: 600px) {
+                font-size: 5vmax;
+            }
 
             @media screen and (min-width: 1440px) {
                 font-size: 5rem;
@@ -493,13 +480,18 @@ input {
                 max-width: 50%;
             }
 
-            &::before {
-                width: 50%;
-                height: 1px;
+            &::before,
+            &::after {
                 background: $slider-hr1;
                 content: "";
-                top: -1em;
+                height: 1px;
+            }
+
+            &::before {
+
                 position: absolute;
+                top: -1em;
+                width: 50%;
 
                 @media (min-width: 1440px) {
                     top: -39px;
@@ -507,19 +499,15 @@ input {
             }
 
             &::after {
-                width: 30%;
-                height: 1px;
-                background: $slider-hr1;
-                content: "";
                 bottom: -1em;
-                position: absolute;
                 left: 0;
+                position: absolute;
+                width: 30%;
 
                 @media (min-width: 1440px) {
                     bottom: -39px;
                 }
             }
-
         }
 
         &__2,
@@ -558,9 +546,11 @@ input {
 
             .hexagon-right {
                 background-color: $slide-arrow-background3;
+
                 &::before {
                     border-bottom: 27.71px solid $slide-arrow-background3;
                 }
+
                 &::after {
                     border-top: 27.71px solid $slide-arrow-background3;
                 }
@@ -568,9 +558,11 @@ input {
 
             .hexagon-left {
                 background-color: $slide-arrow-background2;
+
                 &::before {
                     border-bottom: 27.71px solid $slide-arrow-background2;
                 }
+
                 &::after {
                     border-top: 27.71px solid $slide-arrow-background2;
                 }
@@ -587,11 +579,11 @@ input {
     }
 
     img {
-        z-index: 10;
         display: block;
         height: auto;
         margin: 0 auto;
         width: 100%;
+        z-index: 10;
     }
 }
 
@@ -608,7 +600,6 @@ input {
     &.styleFixed {
 
         position: fixed;
-        z-index: 100;
         z-index: 11;
 
         .menu2__list {
@@ -622,57 +613,51 @@ input {
         position: static;
     }
 
-    
-
     &__list {
+        background: $menu2-background;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
         font-family: 'Karbon Bold', sans-serif;
         font-size: 1.0625rem;
+        justify-content: center;
         text-transform: uppercase;
-        background: $menu2-background;
-        
+
+        &::before,
+        &::after {
+            border-style: solid;
+            content: "";
+            height: 0;
+            position: absolute;
+            top: 0;
+            width: 0px;
+            z-index: 10;
+        }
+
         &::before {
-        content: "";
-        z-index: 10;
-        position: absolute;
-        left: -32px;
-        top: 0;
-        width: 0px;
-        height: 0;
-        border-style: solid;
-        border-width: 0 32px 55px 0;
-        border-color: transparent $menu2-background transparent transparent;
-    }
 
-    &::after {
-        content: "";
-        z-index: 10;
-        position: absolute;
-        right: -32px;
-        top: 0;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 55px 32px 0 0;
-        border-color: $menu2-background transparent transparent transparent;
-    }
+            border-color: transparent $menu2-background transparent transparent;
+            border-width: 0 32px 55px 0;
+            left: -32px;
+        }
 
-
+        &::after {
+            border-color: $menu2-background transparent transparent transparent;
+            border-width: 55px 32px 0 0;
+            right: -32px;
+        }
 
         &__item {
-            text-align: center;
+            border-left: none;
             border-right: 1px solid $menu2-item-border;
             border-top: 1px solid $menu2-item-border;
-            border-left: none;
-            height: 55px;
-            width: 240px;
-            line-height: 55px;
-            vertical-align: middle;
             color: $menu2-item-color;
+            height: 55px;
+            line-height: 55px;
             position: relative;
+            text-align: center;
+            width: 240px;
+            vertical-align: middle;
 
             @media (max-width: 1170px) {
                 width: 25%;
@@ -690,22 +675,22 @@ input {
             }
 
             a {
-                transition: all .3s;
-                padding-bottom: .5rem;
                 border-bottom: 2px solid rgba(0, 0, 0, 0);
+                padding-bottom: .5rem;
                 position: relative;
+                transition: all .3s;
                 z-index: 11;
             }
 
             &::after {
+                background-color: $logo-span-border;
                 content: "";
                 display: block;
+                height: 11px;
                 position: absolute;
                 right: -1px;
                 top: 22px;
-                height: 11px;
                 width: 1px;
-                background-color: $logo-span-border;
 
                 @media (max-width: 700px) {
                     content: none;
@@ -713,6 +698,7 @@ input {
             }
 
             &:last-child {
+                
                 @media (min-width: 701px) {
                     border-right: none;
                 }
@@ -724,6 +710,7 @@ input {
 
             &:hover {
                 color: $logo-span-border;
+                
                 a {
                     border-bottom: 2px solid $logo-span-border;
                     padding-bottom: 0;
@@ -734,10 +721,11 @@ input {
 }
 
 .services {
+    
     background: $section-services-background;
-    position: relative;
-    padding-top: 3.44rem;
     padding-bottom: .5rem;
+    padding-top: 3.44rem;
+    position: relative;
 
     &.extra-padding {
         padding-top: 110px;
@@ -751,9 +739,9 @@ input {
 
     .services__touch {
         position: absolute;
-        z-index: 3;
         right: 10px;
         top: -60px;
+        z-index: 3;
 
         @media (max-width: 1170px) {
             display: none;
@@ -794,20 +782,18 @@ input {
         font-family: 'Karbon Bold', sans-serif;
         font-size: .8125rem;
         padding-left: .25rem;
+        position: relative;
         text-transform: uppercase;
         z-index: 5;
-        position: relative;
-
     }
 
     h2 {
+        color: $services-header;
         font-family: 'Karbon Thin', sans-serif;
         font-size: 3.75rem;
-        color: $services-header;
         margin-bottom: 3.3475rem;
-        z-index: 5;
         position: relative;
-
+        z-index: 5;
 
         @media (max-width: 600px) {
             font-size: 2rem;
@@ -830,18 +816,15 @@ input {
             padding-bottom: 2.5rem;
         }
 
-
         &__left,
         &__right {
             display: flex;
             flex-wrap: wrap;
             width: 100%;
             padding: 0;
-
         }
 
         @media (min-width: 680px) {
-
 
             &__left {
                 padding-right: 2rem;
@@ -861,12 +844,12 @@ input {
     }
 
     &__details {
-        padding: 2rem;
-        width: 100%;
+        align-content: center;
         display: flex;
         flex-direction: column;
-        align-content: center;
         justify-content: flex-end;
+        padding: 2rem;
+        width: 100%;
 
         a {
             text-align: center;
@@ -887,37 +870,40 @@ input {
 }
 
 .moreFirst {
-    z-index: 5;
     @extend .services;
-    position: relative;
     background: url('../assets/images/more-first.png');
-    background-size: cover;
     background-position: right;
+    background-size: cover;
+    position: relative;
+    z-index: 5;
 
     .read-more {
-        cursor: pointer;
-        position: absolute;
-        top: -32px;
-        left: 50%;
-        margin-left: -64px;
         border-bottom: 32px solid $read-more-btn;
         border-left: 19px solid transparent;
         border-right: 19px solid transparent;
-        height: 16px;
-        width: 129px;
-        line-height: 32px;
-        text-align: center;
         color: $more-first-header;
-        text-transform: uppercase;
-        font-size: .8125rem;
+        cursor: pointer;
         font-family: 'Karbon Bold', sans-serif;
+        font-size: .8125rem;
+        height: 16px;
+        left: 50%;
+        line-height: 32px;
+        margin-left: -64px;
+        position: absolute;
+        text-align: center;
+        text-transform: uppercase;
+        top: -32px;
         transition: all .3s;
-        span {
-            text-shadow: 1px 1px 7px $read-more-btn-shadow;
-        }
+        width: 129px;
+        
         &:hover {
             transform: scale(1.25, 1);
         }
+        
+        span {
+            text-shadow: 1px 1px 7px $read-more-btn-shadow;
+        }
+        
     }
 
     h6 {
@@ -930,12 +916,12 @@ input {
     }
 
     hr {
-        width: 50%;
-        height: 1px;
         background: $hr-color;
         border: none;
+        height: 1px;
         margin: .8rem auto .8rem 0;
         transition: all .4s;
+        width: 50%;
     }
 
     &__content {
@@ -945,9 +931,9 @@ input {
         &__left,
         &__right,
         &__center {
-            width: 50%;
-            display: flex;
             cursor: pointer;
+            display: flex;
+            width: 50%;
 
             &:hover {
 
@@ -973,11 +959,12 @@ input {
         }
 
         @media (max-width: 400px) {
+            
             &__left,
             &__right,
             &__center {
-                flex-direction: column;
                 align-items: center;
+                flex-direction: column;
             }
         }
 
@@ -985,8 +972,8 @@ input {
             &__left,
             &__right,
             &__center {
-                width: 100%;
                 margin-top: 2rem;
+                width: 100%;
             }
         }
 
@@ -1007,25 +994,25 @@ input {
             }
 
             &__right {
-                padding-left: 1rem;
                 margin-top: 0;
+                padding-left: 1rem;
             }
         }
 
 
         p {
-            text-align: left;
+            color: $moreFirst-pragraph;
             font-family: 'Droid Sans';
             font-size: .875rem;
-            color: $moreFirst-pragraph;
+            text-align: left;
         }
     }
 
     &__details {
 
         &:first-child {
-            width: 30%;
             padding-right: 0.75rem;
+            width: 30%;
         }
 
         &:last-child {
@@ -1041,17 +1028,17 @@ input {
             text-align: center;
 
             img {
-                width: 100%;
                 height: auto;
                 max-width: 95px;
                 transition: all 0.4s;
+                width: 100%;
             }
         }
 
         h3 {
+            color: $more-first-header;
             font-family: 'Karbon Thin', sans-serif;
             font-size: 2.5rem;
-            color: $more-first-header;
 
             @media (max-width: 600px) {
                 font-size: 1.5rem;
@@ -1065,11 +1052,11 @@ input {
     background: url('../assets/images/carrers.jpg');
     background-position: center top;
     background-repeat: no-repeat;
-    position: relative;
-    width: 100%;
+    color: $carrer-text;
     min-height: 623px;
     overflow: hidden;
-    color: $carrer-text;
+    position: relative;
+    width: 100%;
 
     @media (max-width: 600px) {
         background: linear-gradient(to right, rgba(197, 217, 226, 1) 0%, rgba(210, 227, 235, 1) 7%, rgba(226, 237, 243, 1) 27%, rgba(230, 240, 244, 1) 100%); //        position: static;
@@ -1078,24 +1065,28 @@ input {
     }
 
     &__desc {
-        text-align: center;
-        position: absolute;
-        top: 60px;
+        cursor: pointer;
         left: 48px;
         padding-right: 3rem;
-        cursor: pointer;
+        position: absolute;
+        text-align: center;
+        top: 60px;
+        
         h2 {
-            padding: 0 0.5rem;
             font-family: 'Karbon Thin', sans-serif;
             font-size: 2.5rem;
+            padding: 0 0.5rem;
         }
+        
         p {
-            padding: 1.5rem 0.5rem;
             font-family: 'Droid Sans';
             font-size: .8125rem;
             line-height: 1.1875rem;
+            padding: 1.5rem 0.5rem;
         }
+        
         &:hover {
+        
             img {
                 transition: all .4s;
                 transform: translate(0, -30px);
@@ -1110,31 +1101,36 @@ input {
     &__shape13,
     &__gray__1,
     &__gray__2 {
-        position: absolute;
         left: 50%;
+        position: absolute;
         z-index: 1;
     }
 
     &__gray__1 {
+        margin-left: 687px;
         top: -183px;
-        margin-left: 687px;
     }
+    
     &__gray__2 {
-        top: 379px;
         margin-left: 687px;
+        top: 379px;
     }
+    
     &__carrers {
-        top: -42px;
         margin-left: -526px;
+        top: -42px;
     }
+    
     &__looking {
-        top: 98px;
         margin-left: -283px;
+        top: 98px;
+        
         h2 {
             font-family: 'Karbon Light', sans-serif;
             font-size: 1.75rem;
             line-height: 1.5625rem;
         }
+        
         .person-icon,
         .upload-icon {
             margin-bottom: 1.8125rem;
@@ -1142,14 +1138,16 @@ input {
     }
 
     &__upload {
-        top: 379px;
         margin-left: -284px;
+        top: 379px;
+        
         h2 {
+            color: $upload-text;
             font-family: 'Karbon Light', sans-serif;
             font-size: 1.75rem;
             line-height: 1.5625rem;
-            color: $upload-text;
         }
+        
         .carrer__desc {
             padding-left: 1rem;
         }
@@ -1158,8 +1156,8 @@ input {
     &__news {
         top: 98px;
         margin-left: 201px;
+        
         h2 {
-
             line-height: 3.5625rem;
         }
 
@@ -1169,39 +1167,47 @@ input {
 
         .carrer__desc {
             top: 25px;
+            
             &:hover {
+                
                 img {
                     transition: all .4s;
                     transform: scale(1.4);
                 }
             }
         }
+        
         h5 {
+            color: $news-h5;
             font-family: 'Droid Sans Bold', sans-serif;
             font-size: .8125rem;
             line-height: 1.1875rem;
-            color: $news-h5;
         }
+        
         p {
-            padding-top: 0;
             padding-bottom: 0;
+            padding-top: 0;
         }
-        .arrow-left {
-            position: absolute;
-            top: 50%;
-            margin-top: -4px;
-            left: -7%;
-        }
+        
+        .arrow-left,
         .arrow-right {
             position: absolute;
             top: 50%;
             margin-top: -4px;
+        }
+        
+        .arrow-left {
+            left: -7%;
+        }
+        
+        .arrow-right {
             right: 7%;
         }
     }
+    
     &__shape13 {
-        top: -40px;
         margin-left: -1014px;
+        top: -40px;
     }
 
     @media (max-width: 1169px) {
@@ -1224,8 +1230,7 @@ input {
 
         &__news {
             top: 96px;
-            margin-left: -41px;
-
+            margin-left: -42px;
         }
 
         &__upload {
@@ -1239,21 +1244,22 @@ input {
     }
 
     @media (max-width: 600px) {
+        
         &__carrers,
         &__looking,
         &__news,
         &__upload {
-            position: relative;
-            margin-left: 0;
             left: 0;
-            right: 0;
-            top: 0;
-            text-align: center;
             margin: -2px;
+            margin-left: 0;
+            position: relative;
+            right: 0;
+            text-align: center;
+            top: 0;
 
             .carrer__desc {
-                margin: 0 auto;
                 left: 50%;
+                margin: 0 auto;
                 margin-left: -115px;
                 max-width: 280px;
             }
@@ -1262,10 +1268,10 @@ input {
 }
 
 .summary {
-    padding-top: 1.5rem;
-    padding-bottom: 20px;
     background: $summary-background;
     color: $summary-color;
+    padding-bottom: 20px;
+    padding-top: 1.5rem;
     width: 100%;
 
     .container {
@@ -1287,27 +1293,25 @@ input {
 
     &__content {
 
-        width: 75%;
         display: flex;
         flex-wrap: wrap;
+        width: 75%;
 
         @media (max-width: 1170px) {
-            width: 100%;
             padding: 1.75rem 2.3125rem;
+            width: 100%;
         }
 
         @media (max-width: 1070px) {
             padding: 1rem 1.5rem;
         }
 
-        @media (max-width: 900px) {}
-
         &__item {
             width: 20%;
 
             @media (max-width: 1000px) {
-                width: 25%;
                 text-align: center;
+                width: 25%;
             }
 
             @media (max-width: 840px) {
@@ -1324,22 +1328,23 @@ input {
 
             h4 {
                 display: inline-block;
+                font-family: 'Karbon Bold', sans-serif;
                 font-size: .9375rem;
                 line-height: 1.035rem;
-                font-family: 'Karbon Bold', sans-serif;
-                padding-bottom: 1.25rem;
                 margin-top: 1.5625rem;
+                padding-bottom: 1.25rem;
                 position: relative;
                 text-transform: uppercase;
                 transition: all .25s;
 
                 &::before {
-                    top: -10px;
-                    position: absolute;
-                    content: " ";
-                    width: 27px;
-                    height: 1px;
                     background: $summary-h4-border;
+                    content: "";
+                    height: 1px;
+                    position: absolute;
+                    top: -10px;
+                    transition: all 0.3s;
+                    width: 27px;
 
                     @media (max-width: 1000px) {
                         left: calc(50% - 13.5px);
@@ -1352,16 +1357,16 @@ input {
 
                     &::before {
                         background: $summary-color;
+                        width: 100%;
                     }
                 }
-
             }
 
             h5 {
+                color: $summary-second-color;
                 font-family: 'Droid Sans';
                 font-size: .75rem;
                 line-height: 1.3125rem;
-                color: $summary-second-color;
             }
 
             a {
@@ -1376,31 +1381,27 @@ input {
     }
 
     &__mapWraper {
+        background: $mapWraper-background;
         margin-left: .5rem;
         width: 25%;
-        background: $mapWraper-background;
 
         @media (max-width: 1170px) {
-            width: 100%;
-            margin: 0;
             display: flex;
+            margin: 0;
+            width: 100%;
         }
 
         @media (max-width: 600px) {
-            flex-wrap: wrap; //            height: 700px;
+            flex-wrap: wrap;
         }
 
         &__map {
             height: 145px;
 
             @media (max-width: 1170px) {
-                width: 70%;
                 height: auto;
                 margin: 0;
-            }
-
-            @media (max-width: 780px) {
-                width: 60%;
+                width: 70%;
             }
 
             @media (max-width: 780px) {
@@ -1411,8 +1412,6 @@ input {
                 width: 100%;
                 height: 200px;
             }
-
-
         }
 
         &__content {
@@ -1446,12 +1445,12 @@ input {
             }
 
             h5 {
-                font-family: 'Droid Sans';
                 color: $contact-h5;
+                font-family: 'Droid Sans';
 
                 a.mail {
-                    text-decoration: underline;
                     color: $contact-link;
+                    text-decoration: underline;
                 }
             }
         }
@@ -1460,26 +1459,26 @@ input {
 
 .footer {
     background: $footer-background;
-    min-height: 65px;
     color: $footer-text;
     font-family: 'Droid Sans';
     font-size: .75rem;
     line-height: 65px;
+    min-height: 65px;
 
     .container {
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
+        justify-content: space-between;
 
         @media (max-width: 400px) {
-            justify-content: center;
             flex-direction: column;
+            justify-content: center;
             text-align: center;
         }
 
         p {
-            vertical-align: middle;
             display: inline-block;
+            vertical-align: middle;
         }
 
         span {
