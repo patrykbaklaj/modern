@@ -281,8 +281,10 @@ html {
 
             @media (max-width: 1439px) {
                 height: 8vmin;
-                left: calc(30% - 4vmin);
-                top: calc(50% - 4vmin);
+                left: 30%;
+                top: 50%;
+                margin-left: -4vmin;
+                margin-top: -4vmin;
                 width: 8vmin;
             }
         }

@@ -302,8 +302,10 @@ html {
       @media (max-width: 1439px) {
         .nav__search label:after {
           height: 8vmin;
-          left: calc(30% - 4vmin);
-          top: calc(50% - 4vmin);
+          left: 30%;
+          top: 50%;
+          margin-left: -4vmin;
+          margin-top: -4vmin;
           width: 8vmin; } }
     .nav__search__input {
       -webkit-box-sizing: border-box;
