@@ -45,31 +45,38 @@ table {
 
 @font-face {
   font-family: 'Walkway SemiBold';
-  src: url(bfe8c8f7080ed74e30762cd24b311497.ttf); }
+  src: url(c49177472a3366cb33a39ff74141a7ae.eot);
+  src: url(c49177472a3366cb33a39ff74141a7ae.eot?#iefix) format("embedded-opentype"), url(c244197836204dd7e448cf858e78fcac.woff) format("woff"), url(bfe8c8f7080ed74e30762cd24b311497.ttf); }
 
 @font-face {
   font-family: 'Walkway UltraBold';
-  src: url(0918843cd5828fb9920e710cb21bb9a3.ttf); }
+  src: url(c9bd87d0b8707165dd8dd75fa0074e6f.eot);
+  src: url(c9bd87d0b8707165dd8dd75fa0074e6f.eot?#iefix) format("embedded-opentype"), url(2b2d403c5c716b4fddd204964171fb7e.woff) format("woff"), url(0918843cd5828fb9920e710cb21bb9a3.ttf); }
 
 @font-face {
   font-family: 'Karbon Bold';
-  src: url(04497523956a020159257bb1d678481d.otf); }
+  src: url(cab7a91057e8c0619386357b91cb1254.eot);
+  src: url(cab7a91057e8c0619386357b91cb1254.eot?#iefix) format("embedded-opentype"), url(287cf2027c8dd150157f359ebbde93f8.woff) format("woff"), url(da8707049f4cf5ed5d7f0de2fa5f97fd.ttf), url(04497523956a020159257bb1d678481d.otf); }
 
 @font-face {
   font-family: 'Karbon Thin';
-  src: url(e534e3c3806d7cc282de6eb82a4790a0.otf); }
+  src: url(bc65abf1c49e7ffe7fe2ab6110334b6a.eot);
+  src: url(bc65abf1c49e7ffe7fe2ab6110334b6a.eot?#iefix) format("embedded-opentype"), url(09080f5a9f6637c5a3cb82920d0ec403.woff) format("woff"), url(ad05057967838245ed744a20d7341f0e.ttf); }
 
 @font-face {
   font-family: 'Droid Sans';
-  src: url(9d83fb20700a3a7c45dc9acd64ab121e.ttf); }
+  src: url(bef5ef92b4c582911231bf513642c3fa.eot);
+  src: url(bef5ef92b4c582911231bf513642c3fa.eot?#iefix) format("embedded-opentype"), url(fd6362cfeb43f3c03972416e801683d2.woff) format("woff"), url(9d83fb20700a3a7c45dc9acd64ab121e.ttf); }
 
 @font-face {
   font-family: 'Droid Sans Bold';
-  src: url(2afdf28d5cdd079b41968cdabf1b469e.ttf); }
+  src: url(1281ae42f5d647d5adf101a12ea1dc68.eot);
+  src: url(1281ae42f5d647d5adf101a12ea1dc68.eot?#iefix) format("embedded-opentype"), url(5c9686ee4caaac73b1a028275191c78b.woff) format("woff"), url(2afdf28d5cdd079b41968cdabf1b469e.ttf); }
 
 @font-face {
   font-family: 'Karbon Light';
-  src: url(50e6537d07e089932e02d22ceb439f1c.otf); }
+  src: url(0da4e31c7b3dc043078fca19b6e3c618.eot);
+  src: url(0da4e31c7b3dc043078fca19b6e3c618.eot?#iefix) format("embedded-opentype"), url(0c2c50dab960c7bd9f6c63a96cbfac3a.woff) format("woff"), url(a626b1cf095778daf18af15af15c5dc9.ttf), url(50e6537d07e089932e02d22ceb439f1c.otf); }
 
 body,
 html {
@@ -145,7 +152,7 @@ input {
       -ms-flex-direction: row;
       flex-direction: row; } }
   .nav__logo {
-    font-family: 'Walkway SemiBold';
+    font-family: 'Walkway SemiBold', sans-serif;
     padding-left: 1.8rem;
     vertical-align: middle; }
     .nav__logo h2 {
@@ -158,7 +165,7 @@ input {
       border-bottom: 2px solid #f19621; }
       .nav__logo h2 span {
         border-bottom: 2px solid #1fb5e3;
-        font-family: 'Walkway UltraBold';
+        font-family: 'Walkway UltraBold', sans-serif;
         font-weight: bold;
         z-index: 9; }
     @media screen and (max-width: 1170px) {
@@ -178,10 +185,8 @@ input {
       line-height: 70px;
       display: inline-block;
       font-size: 13px;
-      font-family: 'Karbon Bold';
+      font-family: 'Karbon Bold', sans-serif;
       padding: 0 2rem; }
-      .nav__menu__item::after {
-        position: relative; }
       .nav__menu__item a {
         line-height: 21px;
         color: inherit;
@@ -264,13 +269,13 @@ input {
       display: inline-block;
       padding: 0 2rem;
       font-size: 13px;
-      font-family: 'Karbon Bold';
+      font-family: 'Karbon Bold', sans-serif;
       border-right: 1px solid #4d535b;
       line-height: 21px; }
       .nav__submenu__item:last-child {
         border-right: none; }
     .nav__submenu__title {
-      font-family: 'Karbon Thin';
+      font-family: 'Karbon Thin', sans-serif;
       font-size: 2rem;
       display: inline-block;
       vertical-align: middle;
@@ -313,7 +318,7 @@ input {
       width: 100%;
       padding-left: 40%;
       font-size: 9vmin;
-      font-family: 'Karbon Bold'; }
+      font-family: 'Karbon Bold', sans-serif; }
       @media screen and (min-width: 1440px) {
         .nav__search__input {
           font-size: 6rem;
@@ -469,7 +474,7 @@ input {
     max-width: 75%;
     position: absolute;
     font-size: 6vmin;
-    font-family: "Karbon Thin";
+    font-family: "Karbon Thin", sans-serif;
     line-height: 0.75; }
     @media screen and (min-width: 1440px) {
       .slider .slider__item h2 {
@@ -549,7 +554,7 @@ input {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    font-family: 'Karbon Bold';
+    font-family: 'Karbon Bold', sans-serif;
     font-size: 1.0625rem;
     text-transform: uppercase; }
     .menu2__list__item {
@@ -645,14 +650,14 @@ input {
       display: none; } }
   .services h6, .moreFirst h6 {
     color: #909fae;
-    font-family: 'Karbon Bold';
+    font-family: 'Karbon Bold', sans-serif;
     font-size: .8125rem;
     padding-left: .25rem;
     text-transform: uppercase;
     z-index: 5;
     position: relative; }
   .services h2, .moreFirst h2 {
-    font-family: 'Karbon Thin';
+    font-family: 'Karbon Thin', sans-serif;
     font-size: 3.75rem;
     color: #21bae5;
     margin-bottom: 3.3475rem;
@@ -714,7 +719,7 @@ input {
       -o-transition: all .3s;
       transition: all .3s; }
       .services__details a h3 {
-        font-family: 'Karbon Thin';
+        font-family: 'Karbon Thin', sans-serif;
         font-size: 1.5rem;
         padding-top: 2.5rem; }
     .services__details a:hover {
@@ -745,7 +750,7 @@ input {
     color: #ffffff;
     text-transform: uppercase;
     font-size: .8125rem;
-    font-family: 'Karbon Bold';
+    font-family: 'Karbon Bold', sans-serif;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s; }
@@ -847,7 +852,7 @@ input {
         -o-transition: all 0.4s;
         transition: all 0.4s; }
     .moreFirst__details h3 {
-      font-family: 'Karbon Thin';
+      font-family: 'Karbon Thin', sans-serif;
       font-size: 2.5rem;
       color: #ffffff; }
       @media (max-width: 600px) {
@@ -885,7 +890,7 @@ input {
     cursor: pointer; }
     .carrer__desc h2 {
       padding: 0 0.5rem;
-      font-family: 'Karbon Thin';
+      font-family: 'Karbon Thin', sans-serif;
       font-size: 2.5rem; }
     .carrer__desc p {
       padding: 1.5rem 0.5rem;
@@ -916,7 +921,7 @@ input {
     top: 98px;
     margin-left: -283px; }
     .carrer__looking h2 {
-      font-family: 'Karbon Light';
+      font-family: 'Karbon Light', sans-serif;
       font-size: 1.75rem;
       line-height: 1.5625rem; }
     .carrer__looking .person-icon,
@@ -926,7 +931,7 @@ input {
     top: 379px;
     margin-left: -284px; }
     .carrer__upload h2 {
-      font-family: 'Karbon Light';
+      font-family: 'Karbon Light', sans-serif;
       font-size: 1.75rem;
       line-height: 1.5625rem;
       color: #1fb5e3; }
@@ -949,7 +954,7 @@ input {
         -ms-transform: scale(1.4);
         transform: scale(1.4); }
     .carrer__news h5 {
-      font-family: 'Droid Sans Bold';
+      font-family: 'Droid Sans Bold', sans-serif;
       font-size: .8125rem;
       line-height: 1.1875rem;
       color: #b84c0a; }
@@ -1057,7 +1062,7 @@ input {
         display: inline-block;
         font-size: .9375rem;
         line-height: 1.035rem;
-        font-family: 'Karbon Bold';
+        font-family: 'Karbon Bold', sans-serif;
         padding-bottom: 1.25rem;
         margin-top: 1.5625rem;
         position: relative;
@@ -1137,13 +1142,13 @@ input {
         .summary__mapWraper__content {
           width: 100%; } }
       .summary__mapWraper__content h3 {
-        font-family: 'Karbon Light';
+        font-family: 'Karbon Light', sans-serif;
         font-size: 1.75rem;
         line-height: 1.5625rem;
         margin-bottom: 1.75rem; }
       .summary__mapWraper__content h4,
       .summary__mapWraper__content h5 {
-        font-family: 'Droid Sans Bold';
+        font-family: 'Droid Sans Bold', sans-serif;
         font-size: .75rem;
         line-height: 1.125rem; }
       .summary__mapWraper__content h5 {

@@ -1,36 +1,58 @@
-@font-face { 
-     font-family: 'Walkway SemiBold'; 
-     src: url('../assets/fonts/Walkway-SemiBold.ttf');
+@font-face {
+     font-family: 'Walkway SemiBold';
+     src: url('../assets/fonts/Walkway-SemiBold.eot');
+     src: url('../assets/fonts/Walkway-SemiBold.eot?#iefix') format('embedded-opentype'),
+     url('../assets/fonts/Walkway-SemiBold.woff') format('woff'),
+     url('../assets/fonts/Walkway-SemiBold.ttf');
 }
 
-@font-face { 
-     font-family: 'Walkway UltraBold'; 
-     src: url('../assets/fonts/Walkway-UltraBold.ttf');
+@font-face {
+     font-family: 'Walkway UltraBold';
+     src: url('../assets/fonts/Walkway-UltraBold.eot');
+     src: url('../assets/fonts/Walkway-UltraBold.eot?#iefix') format('embedded-opentype'),
+     url('../assets/fonts/Walkway-UltraBold.woff') format('woff'),
+     url('../assets/fonts/Walkway-UltraBold.ttf');
 }
 
-@font-face { 
-     font-family: 'Karbon Bold'; 
-     src: url('../assets/fonts/Karbon-Bold.otf');
+@font-face {
+     font-family: 'Karbon Bold';
+     src: url('../assets/fonts/Karbon-Bold.eot');
+     src: url('../assets/fonts/Karbon-Bold.eot?#iefix') format('embedded-opentype'),
+     url('../assets/fonts/Karbon-Bold.woff') format('woff'),
+     url('../assets/fonts/Karbon-Bold.ttf'),
+     url('../assets/fonts/Karbon-Bold.otf');
 }
 
-@font-face { 
-     font-family: 'Karbon Thin'; 
-     src: url('../assets/fonts/Karbon-Thin.otf');
+@font-face {
+     font-family: 'Karbon Thin';
+     src: url('../assets/fonts/Karbon-Thin.eot');
+     src: url('../assets/fonts/Karbon-Thin.eot?#iefix') format('embedded-opentype'),
+     url('../assets/fonts/Karbon-Thin.woff') format('woff'),
+     url('../assets/fonts/Karbon-Thin.ttf');
 }
 
-@font-face { 
-     font-family: 'Droid Sans'; 
-     src: url('../assets/fonts/DroidSans.ttf');
+@font-face {
+     font-family: 'Droid Sans';
+     src: url('../assets/fonts/Droid-Sans.eot');
+     src: url('../assets/fonts/Droid-Sans.eot?#iefix') format('embedded-opentype'),
+     url('../assets/fonts/Droid-Sans.woff') format('woff'),
+     url('../assets/fonts/Droid-Sans.ttf');
 }
 
-@font-face { 
-     font-family: 'Droid Sans Bold'; 
-     src: url('../assets/fonts/DroidSans-Bold.ttf');
+@font-face {
+     font-family: 'Droid Sans Bold';
+     src: url('../assets/fonts/Droid-Sans-Bold.eot');
+     src: url('../assets/fonts/Droid-Sans-Bold.eot?#iefix') format('embedded-opentype'),
+     url('../assets/fonts/Droid-Sans-Bold.woff') format('woff'),
+     url('../assets/fonts/Droid-Sans-Bold.ttf');
 }
 
-@font-face { 
-     font-family: 'Karbon Light'; 
-     src: url('../assets/fonts/Karbon-Light.otf');
+@font-face {
+     font-family: 'Karbon Light';
+     src: url('../assets/fonts/Karbon-Light.eot');
+     src: url('../assets/fonts/Karbon-Light.eot?#iefix') format('embedded-opentype'),
+     url('../assets/fonts/Karbon-Light.woff') format('woff'),
+     url('../assets/fonts/Karbon-Light.ttf'),
+     url('../assets/fonts/Karbon-Light.otf');
+
 }
-
-

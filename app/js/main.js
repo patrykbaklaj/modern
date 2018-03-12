@@ -2,9 +2,6 @@
 
 
  $(document).ready(function () {
-     
-     // prevent  anchors elements default behavior
-     $('a').on('click', (event) => event.preventDefault());
 
      // handle like menu visibility on hover
      $('.like').on('mouseenter mouseleave', function () {

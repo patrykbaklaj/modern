@@ -93,7 +93,7 @@ input {
 
     &__logo {
 
-        font-family: 'Walkway SemiBold';
+        font-family: 'Walkway SemiBold', sans-serif;
         padding-left: 1.8rem;
         vertical-align: middle;
 
@@ -108,7 +108,7 @@ input {
 
             span {
                 border-bottom: 2px solid $logo-span-border;
-                font-family: 'Walkway UltraBold';
+                font-family: 'Walkway UltraBold', sans-serif;
                 font-weight: bold;
                 z-index: 9;
             }
@@ -136,11 +136,8 @@ input {
             line-height: 70px;
             display: inline-block;
             font-size: 13px;
-            font-family: 'Karbon Bold';
+            font-family: 'Karbon Bold', sans-serif;
             padding: 0 2rem;
-            &::after {
-                position: relative;
-            }
 
             a {
                 line-height: 21px;
@@ -247,7 +244,7 @@ input {
             display: inline-block;
             padding: 0 2rem;
             font-size: 13px;
-            font-family: 'Karbon Bold';
+            font-family: 'Karbon Bold', sans-serif;
             border-right: 1px solid $border-sub-menu-items;
             line-height: 21px;
 
@@ -257,7 +254,7 @@ input {
         }
 
         &__title {
-            font-family: 'Karbon Thin';
+            font-family: 'Karbon Thin', sans-serif;
             font-size: 2rem;
             display: inline-block;
             vertical-align: middle;
@@ -309,7 +306,7 @@ input {
             width: 100%;
             padding-left: 40%;
             font-size: 9vmin;
-            font-family: 'Karbon Bold';
+            font-family: 'Karbon Bold', sans-serif;
 
             @media screen and (min-width: 1440px) {
                 font-size: 6rem;
@@ -480,7 +477,7 @@ input {
             max-width: 75%;
             position: absolute;
             font-size: 6vmin;
-            font-family: "Karbon Thin";
+            font-family: "Karbon Thin", sans-serif;
             line-height: 0.75;
 
 
@@ -603,7 +600,7 @@ input {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        font-family: 'Karbon Bold';
+        font-family: 'Karbon Bold', sans-serif;
         font-size: 1.0625rem;
         text-transform: uppercase;
 
@@ -743,7 +740,7 @@ input {
 
     h6 {
         color: $menu2-item-color;
-        font-family: 'Karbon Bold';
+        font-family: 'Karbon Bold', sans-serif;
         font-size: .8125rem;
         padding-left: .25rem;
         text-transform: uppercase;
@@ -753,7 +750,7 @@ input {
     }
 
     h2 {
-        font-family: 'Karbon Thin';
+        font-family: 'Karbon Thin', sans-serif;
         font-size: 3.75rem;
         color: $services-header;
         margin-bottom: 3.3475rem;
@@ -825,7 +822,7 @@ input {
             transition: all .3s;
 
             h3 {
-                font-family: 'Karbon Thin';
+                font-family: 'Karbon Thin', sans-serif;
                 font-size: 1.5rem;
                 padding-top: 2.5rem;
             }
@@ -862,7 +859,7 @@ input {
         color: $more-first-header;
         text-transform: uppercase;
         font-size: .8125rem;
-        font-family: 'Karbon Bold';
+        font-family: 'Karbon Bold', sans-serif;
         transition: all .3s;
         span {
             text-shadow: 1px 1px 7px $read-more-btn-shadow;
@@ -1001,7 +998,7 @@ input {
         }
 
         h3 {
-            font-family: 'Karbon Thin';
+            font-family: 'Karbon Thin', sans-serif;
             font-size: 2.5rem;
             color: $more-first-header;
 
@@ -1038,7 +1035,7 @@ input {
         cursor: pointer;
         h2 {
             padding: 0 0.5rem;
-            font-family: 'Karbon Thin';
+            font-family: 'Karbon Thin', sans-serif;
             font-size: 2.5rem;
         }
         p {
@@ -1083,7 +1080,7 @@ input {
         top: 98px;
         margin-left: -283px;
         h2 {
-            font-family: 'Karbon Light';
+            font-family: 'Karbon Light', sans-serif;
             font-size: 1.75rem;
             line-height: 1.5625rem;
         }
@@ -1097,7 +1094,7 @@ input {
         top: 379px;
         margin-left: -284px;
         h2 {
-            font-family: 'Karbon Light';
+            font-family: 'Karbon Light', sans-serif;
             font-size: 1.75rem;
             line-height: 1.5625rem;
             color: $upload-text;
@@ -1129,7 +1126,7 @@ input {
             }
         }
         h5 {
-            font-family: 'Droid Sans Bold';
+            font-family: 'Droid Sans Bold', sans-serif;
             font-size: .8125rem;
             line-height: 1.1875rem;
             color: $news-h5;
@@ -1278,7 +1275,7 @@ input {
                 display: inline-block;
                 font-size: .9375rem;
                 line-height: 1.035rem;
-                font-family: 'Karbon Bold';
+                font-family: 'Karbon Bold', sans-serif;
                 padding-bottom: 1.25rem;
                 margin-top: 1.5625rem;
                 position: relative;
@@ -1384,7 +1381,7 @@ input {
             }
 
             h3 {
-                font-family: 'Karbon Light';
+                font-family: 'Karbon Light', sans-serif;
                 font-size: 1.75rem;
                 line-height: 1.5625rem;
                 margin-bottom: 1.75rem;
@@ -1392,7 +1389,7 @@ input {
 
             h4,
             h5 {
-                font-family: 'Droid Sans Bold';
+                font-family: 'Droid Sans Bold', sans-serif;
                 font-size: .75rem;
                 line-height: 1.125rem;
             }
