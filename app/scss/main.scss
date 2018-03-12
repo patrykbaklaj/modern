@@ -85,6 +85,10 @@ input {
     width: 100%;
     box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
 
+    @media (min-width: 700px) {
+        position: fixed;
+        z-index: 100;
+    }
 
 
     @media (min-width: 1170px) {
@@ -591,9 +595,34 @@ input {
     }
 }
 
+
+
 .menu2 {
     width: 100%;
     margin: 0;
+
+    nav {
+        position: relative;
+    }
+
+    &.styleFixed {
+
+        position: fixed;
+        z-index: 100;
+        z-index: 11;
+
+        .menu2__list {
+            width: calc(100% - 208px);
+            margin: 0 auto;
+            position: relative;
+        }
+    }
+
+    &.styleStatic {
+        position: static;
+    }
+
+    
 
     &__list {
         display: flex;
@@ -603,6 +632,35 @@ input {
         font-family: 'Karbon Bold', sans-serif;
         font-size: 1.0625rem;
         text-transform: uppercase;
+        background: $menu2-background;
+        
+        &::before {
+        content: "";
+        z-index: 10;
+        position: absolute;
+        left: -32px;
+        top: 0;
+        width: 0px;
+        height: 0;
+        border-style: solid;
+        border-width: 0 32px 55px 0;
+        border-color: transparent $menu2-background transparent transparent;
+    }
+
+    &::after {
+        content: "";
+        z-index: 10;
+        position: absolute;
+        right: -32px;
+        top: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 55px 32px 0 0;
+        border-color: $menu2-background transparent transparent transparent;
+    }
+
+
 
         &__item {
             text-align: center;
@@ -635,6 +693,8 @@ input {
                 transition: all .3s;
                 padding-bottom: .5rem;
                 border-bottom: 2px solid rgba(0, 0, 0, 0);
+                position: relative;
+                z-index: 11;
             }
 
             &::after {
@@ -669,19 +729,6 @@ input {
                     padding-bottom: 0;
                 }
             }
-
-            @media screen and (max-width: 579px) {
-                //                width: 50%;
-            }
-
-            @media screen and (min-width: 580px) {
-                //                width: 25%;
-                //                line-height: 55px;
-            }
-
-            @media screen and (min-width: 730px) {
-                //                width: 20%;
-            }
         }
     }
 }
@@ -691,6 +738,10 @@ input {
     position: relative;
     padding-top: 3.44rem;
     padding-bottom: .5rem;
+
+    &.extra-padding {
+        padding-top: 110px;
+    }
 
     @media (max-width: 600px) {
         .container {
