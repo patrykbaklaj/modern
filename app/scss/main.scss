@@ -462,7 +462,6 @@ input {
         clear: both;
     }
 
-    .slider__container {}
     .slider__item {
         float: left;
         display: inline-block;
@@ -473,6 +472,7 @@ input {
         color: $slider-item;
         position: relative;
         overflow: hidden;
+
         h2 {
             z-index: 1;
             top: 33%;
@@ -483,12 +483,40 @@ input {
             font-family: "Karbon Thin";
             line-height: 0.75;
 
+
             @media screen and (min-width: 1440px) {
                 font-size: 5rem;
             }
 
             @media screen and (min-width: 1200px) {
                 max-width: 50%;
+            }
+
+            &::before {
+                width: 50%;
+                height: 1px;
+                background: $slider-hr1;
+                content: "";
+                top: -1em;
+                position: absolute;
+
+                @media (min-width: 1440px) {
+                    top: -39px;
+                }
+            }
+
+            &::after {
+                width: 30%;
+                height: 1px;
+                background: $slider-hr1;
+                content: "";
+                bottom: -1em;
+                position: absolute;
+                left: 0;
+
+                @media (min-width: 1440px) {
+                    bottom: -39px;
+                }
             }
 
         }
@@ -515,6 +543,14 @@ input {
                     border-top: 27.71px solid $slide-arrow-background2;
                 }
             }
+
+            h2 {
+
+                &::before,
+                &::after {
+                    background: $slider-hr2;
+                }
+            }
         }
 
         &__3 {
@@ -536,6 +572,14 @@ input {
                 }
                 &::after {
                     border-top: 27.71px solid $slide-arrow-background2;
+                }
+            }
+
+            h2 {
+
+                &::before,
+                &::after {
+                    background: $slider-hr3;
                 }
             }
         }
@@ -978,6 +1022,13 @@ input {
     min-height: 623px;
     overflow: hidden;
     color: $carrer-text;
+
+    @media (max-width: 600px) {
+        background: linear-gradient(to right, rgba(197, 217, 226, 1) 0%, rgba(210, 227, 235, 1) 7%, rgba(226, 237, 243, 1) 27%, rgba(230, 240, 244, 1) 100%); //        position: static;
+        display: flex;
+        flex-direction: column;
+    }
+
     &__desc {
         text-align: center;
         position: absolute;
@@ -1003,6 +1054,7 @@ input {
             }
         }
     }
+
     &__carrers,
     &__looking,
     &__upload,
@@ -1014,10 +1066,7 @@ input {
         left: 50%;
         z-index: 1;
     }
-    .person-icon,
-    .upload-icon {
-        margin-bottom: 1.8125rem;
-    }
+
     &__gray__1 {
         top: -183px;
         margin-left: 687px;
@@ -1038,7 +1087,12 @@ input {
             font-size: 1.75rem;
             line-height: 1.5625rem;
         }
+        .person-icon,
+        .upload-icon {
+            margin-bottom: 1.8125rem;
+        }
     }
+
     &__upload {
         top: 379px;
         margin-left: -284px;
@@ -1052,10 +1106,12 @@ input {
             padding-left: 1rem;
         }
     }
+
     &__news {
         top: 98px;
         margin-left: 201px;
         h2 {
+
             line-height: 3.5625rem;
         }
 
@@ -1098,6 +1154,62 @@ input {
     &__shape13 {
         top: -40px;
         margin-left: -1014px;
+    }
+
+    @media (max-width: 1169px) {
+
+        &__shape13,
+        &__gray__1,
+        &__gray__2 {
+            display: none;
+        }
+
+        &__carrers {
+            top: -43px;
+            margin-left: -284px;
+        }
+
+        &__looking {
+            top: 237px;
+            margin-left: -284px;
+        }
+
+        &__news {
+            top: 96px;
+            margin-left: -41px;
+
+        }
+
+        &__upload {
+            top: 377px;
+            margin-left: -42px;
+
+            h2 {
+                line-height: 5rem;
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        &__carrers,
+        &__looking,
+        &__news,
+        &__upload {
+            position: relative;
+            margin-left: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            text-align: center;
+            margin: -2px;
+
+            .carrer__desc {
+                margin: 0 auto;
+                left: 50%;
+                margin-left: -115px;
+                max-width: 280px;
+            }
+        }
     }
 }
 
